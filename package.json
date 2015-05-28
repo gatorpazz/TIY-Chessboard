@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gatorpazz/TIY-Chessboard/issues"
   },
-  "homepage": "https://github.com/gatorpazz/TIY-Chessboard"
+  "homepage": "https://github.com/gatorpazz/TIY-Chessboard",
+  "dependencies": {
+    "browser-sync": "^2.7.6"
+  }
 }
