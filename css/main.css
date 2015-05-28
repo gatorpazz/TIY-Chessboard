@@ -95,18 +95,86 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .container {
+       border: 1px solid;
+       width: 80%;
+       margin: 0 auto;
+       min-width: 1in;
+       max-width: 6in;
+   }
 
+   .chessboard .row {
+     margin: 0; padding: 0;
+     position: relative;
+     clear: both;
+   }
 
+   .chessboard .row::before,
+   .chessboard .row::after {
+     font-size: 300%;
+     position: absolute;
+   }
 
+   .chessboard .row::after {
+     left: 103%;
+   }
 
+   .chessboard .row::before {
+     right: 103%;
+   }
 
+   .chessboard .rank-8::before, .chessboard .rank-8::after {
+     content: '8';
+   }
 
+   .chessboard .rank-7::before, .chessboard .rank-7::after {
+     content: '7';
+   }
 
+   .chessboard .rank-6::before, .chessboard .rank-6::after {
+     content: '6';
+   }
 
+   .chessboard .rank-5::before, .chessboard .rank-5::after {
+     content: '5';
+   }
 
+   .chessboard .rank-4::before, .chessboard .rank-4::after {
+     content: '4';
+   }
 
+   .chessboard .rank-3::before, .chessboard .rank-3::after {
+     content: '3';
+   }
 
+   .chessboard .rank-2::before, .chessboard .rank-2::after {
+     content: '2';
+   }
 
+   .chessboard .rank-1::before, .chessboard .rank-1::after {
+     content: '1';
+   }
+
+   .chessboard .square {
+       background-color: blue;
+       width: 12.5%;
+       padding-bottom: 12.5%;
+       outline: 1px solid red;
+       display: inline-block;
+       float: left;
+   }
+
+   .chessboard .row:nth-child(even) .square:nth-child(even) {
+       background-color: blue;
+   }
+
+   .chessboard .row:nth-child(even) .square:nth-child(odd) {
+       background-color: lightgray;
+   }
+
+   .chessboard .square:nth-child(even) {
+       background-color: lightgrey;
+   }
 
 
 

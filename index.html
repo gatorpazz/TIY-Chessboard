@@ -21,73 +21,90 @@
         <![endif]-->
 
     <style>
-        .container {
-            border: 1px solid;
-            width: 80%;
-            margin: 0 auto;
-            min-width: 1in;
-            max-width: 3in;
-        }
 
-        .chessboard .square {
-            background-color: blue;
-            width: 50%;
-            padding-bottom: 50%;
-            outline: 1px solid red;
-            display: inline-block;
-            float: left;
-        }
-
-        .chessboard {
-
-        }
-
-        .chessboard .row {
-          margin: 0; padding: 0;
-          position: relative;
-          clear: both;
-        }
-
-        .chessboard .row::before,
-        .chessboard .row::after {
-          font-size: 500%;
-          position: absolute;
-        }
-
-        .chessboard .row::before, {
-          right: 100%;
-        }
-
-        .chessboard .row::after, {
-          left: 100%;
-        }
-        .chessboard .rank-2::before,
-        .chessboard .rank-2::after {
-          content: '2';
-        }
-
-        .chessboard .row:nth-child(even) .square:nth-child(even) {
-            background-color: blue;
-        }
-
-        .chessboard .row:nth-child(even) .square:nth-child(odd) {
-            background-color: lightgray;
-        }
-
-        .chessboard .square:nth-child(even) {
-            background-color: lightgrey;
-        }
     </style>
 
     <main class="container">
         <div class="chessboard">
-            <section class="row rank-2">
+            <section class="row rank-8">
                 <div class="square file-a"></div>
                 <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </section>
+            <section class="row rank-7">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </section>
+            <section class="row rank-6">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </section>
+            <section class="row rank-5">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </section>
+            <section class="row rank-4">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </section>
+            <section class="row rank-3">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
             </section>
             <section class="row rank-2">
                 <div class="square file-a"></div>
                 <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
+            </section>
+            <section class="row rank-1">
+                <div class="square file-a"></div>
+                <div class="square file-b"></div>
+                <div class="square file-c"></div>
+                <div class="square file-d"></div>
+                <div class="square file-e"></div>
+                <div class="square file-f"></div>
+                <div class="square file-g"></div>
+                <div class="square file-h"></div>
             </section>
         </div>
     </main>
