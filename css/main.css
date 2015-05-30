@@ -95,6 +95,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   body {
+     background-color: darkgrey;
+   }
+
    .container {
        width: 80%;
        margin: 3em auto 3em auto;
@@ -158,7 +162,6 @@ textarea {
        background-color: red;
        width: 12.5%;
        padding-bottom: 12.5%;
-       outline: 1px solid red;
        display: inline-block;
        float: left;
    }
@@ -193,6 +196,43 @@ textarea {
      font-size: 5ex;
      background-color: red;
      padding: 0 0.5em 0 0.5em;
+     border-radius: 20%;
+   }
+
+   .chessboard .row .white::before, .chessboard .row .black::before {
+     font-size: 300%;
+     text-align: center;
+     position: absolute;
+     width: 12.5%;
+     line-height: 1.2;
+   }
+
+   .chessboard .row .black.pawn::before, .white.pawn::before {
+     content: '\265f';
+   }
+
+   .chessboard .row .black.knight::before, .white.knight::before {
+     content: '\265e';
+   }
+
+   .chessboard .row .black.rook::before, .white.rook::before {
+     content: '\265c';
+   }
+
+   .chessboard .row .black.queen::before, .white.queen::before {
+     content: '\265b';
+   }
+
+   .chessboard .row .black.king::before, .white.king::before {
+     content: '\265a';
+   }
+
+   .chessboard .row .black.bishop::before, .white.bishop::before {
+     content: '\265d';
+   }
+
+   .chessboard .row .white {
+     color: white;
    }
 
 
