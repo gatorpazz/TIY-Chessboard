@@ -1,5 +1,5 @@
 (function(window) {
-  window.chess = {
+
     var board = {
       file: ["a", "b", "c", "d", "e", "f", "g", "h"],
       rank: [1, 2, 3, 4, 5, 6, 7, 8]
@@ -47,7 +47,9 @@
     var blackPawn7 = new piece(7, 7);
     var blackPawn8 = new piece(8, 7);
 
-    blackPawn4.move(4, 4);
+    var game = 1;
 
-  };
+    window.chess = {
+
+    };
 })(window);
